@@ -2,6 +2,8 @@ import tweepy
 from pymongo import MongoClient
 from configparser import ConfigParser
 
+import preprocessor as p
+
 class Authentication:
 
     def __init__(self):

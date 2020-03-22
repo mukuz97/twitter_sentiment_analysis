@@ -2,7 +2,7 @@ import sys
 import getopt
 
 from TweetDump import Dumper
-from Processing import Process
+from Processing import Filter
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
     if opt == 1:
         Dumper().start_dump()
     elif opt == 2:
-        Process().filter_tweets()
+        Filter().filter_tweets()
 
 
 if __name__ == '__main__':

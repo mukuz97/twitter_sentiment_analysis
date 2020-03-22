@@ -23,7 +23,7 @@ class ProgressBar:
         sys.stdout.write("]\n")
 
 
-class Process:
+class Filter:
 
     def __init__(self):
         parser = ConfigParser()
@@ -44,9 +44,6 @@ class Process:
                 return status["extended_tweet"]["full_text"]
             except KeyError:
                 return status["text"]
-
-    def clean_tweets(self):
-        pass
 
     def filter_tweets(self):
         processed_count = 0
